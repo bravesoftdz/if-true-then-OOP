@@ -87,7 +87,6 @@
             <Form>Form1</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="Unit2.pas"/>
         <DCCReference Include="UAbstractFactory.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
