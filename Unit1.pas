@@ -1,5 +1,5 @@
 unit Unit1;
-
+
 interface
 
 uses
@@ -33,6 +33,7 @@ implementation
 procedure TForm1.Button1Click(Sender: TObject);
 
 begin
+
   if CheckBox1.Checked then
   begin
     fAbstractFactory := WinFactory.Create;
@@ -42,11 +43,13 @@ begin
   else
   begin
     fAbstractFactory := MacFactory.Create;
-    fAbstractButton := WinButton.Create;
+    fAbstractButton := MacButton.Create;
     fAbstractWindow := MacWindow.Create;
   end;
+
   Label1.Caption := fAbstractFactory.printButton(fAbstractButton);
   Label2.Caption := fAbstractFactory.printWindow(fAbstractWindow);
 end;
 
 end.
+

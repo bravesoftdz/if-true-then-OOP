@@ -1,5 +1,5 @@
 unit UAbstractFactory;
-
+
 interface
 
 type
@@ -51,13 +51,13 @@ implementation
 
 function WinFactory.printButton(fAbstractButton: AbstractButton): string;
 begin
-  fAbstractButton := WinButton.Create;
+  fAbstractButton := WinButton.create;
   result := fAbstractButton.print;
 end;
 
 function WinFactory.printWindow(fAbstractWindow: AbstractWindow): string;
 begin
-  fAbstractWindow := WinWindow.Create;
+  fAbstractWindow := WinWindow.create;
   result := fAbstractWindow.print;
 end;
 
@@ -65,13 +65,13 @@ end;
 
 function MacFactory.printButton(fAbstractButton: AbstractButton): string;
 begin
-  fAbstractButton := MacButton.Create;
+  fAbstractButton := MacButton.create;
   result := fAbstractButton.print;
 end;
 
 function MacFactory.printWindow(fAbstractWindow: AbstractWindow): string;
 begin
-  fAbstractWindow := MacWindow.Create;
+  fAbstractWindow := MacWindow.create;
   result := fAbstractWindow.print;
 end;
 
